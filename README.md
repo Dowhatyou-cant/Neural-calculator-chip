@@ -1,6 +1,6 @@
-# Handwritten-Calculator Test Chip: v2 Inference Engine
+# Neural-Calculator Test Chip: v2 Inference Engine
 
-An independent, AI-assisted chip design project by **Nirmal Raj J S** (Kriston Technologies, Chennai).
+An independent, AI-assisted chip design project.
 
 ## In plain words
 
