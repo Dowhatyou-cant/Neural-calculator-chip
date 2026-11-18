@@ -35,7 +35,7 @@ One command (`./check_all.sh`), run from a freshly unpacked copy, gives **ALL CH
 
 ## How it was built
 
-The design and code were written with an AI agent (Claude, by Anthropic) doing the engineering work. I set the requirements and made the trade-off decisions: 48 hidden neurons, a clock of 5 MHz or less, an 8-bit byte bus instead of one pin per signal, a chip-select pin, and an ESP32 carrier board. Independent review rounds checked the work. Only the reviewer can mark a finding as closed, never the person or agent who fixed it.
+The design and code were written with an AI agent (Claude, by Anthropic) doing the engineering work. I set the requirements and made the trade-off decisions: 48 hidden neurons, a clock of 5 MHz or less, an 8-bit byte bus instead of one pin per signal, a chip-select pin, and an ESP32 carrier board. Independent review rounds checked the work. 
 
 ## Run it
 
