@@ -2,6 +2,10 @@
 
 An independent, AI-assisted chip design project.
 
+## Why I built this
+
+I started by exploring how computers work through code. The deeper I went, the clearer it became that every line of software ends up as electrical signals switching transistors on and off, and that a chip is simply that circuit made physical. I wanted to understand that layer properly, not just read about it, so I set out to design a small chip myself: from the model and the Verilog, through verification and synthesis, aiming for a real shuttle run at SCL.
+
 ## In plain words
 
 This is a very small neural network built directly out of logic gates, for a test chip. An ESP32 microcontroller sends the chip an 8×8 image of a handwritten digit or symbol (0–9, + − × ÷). The chip says which one it is, and the ESP32 does the arithmetic. Together they make a handwritten calculator.
