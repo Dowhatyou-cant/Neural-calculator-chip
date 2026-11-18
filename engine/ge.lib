@@ -1,0 +1,14 @@
+library(ge) {
+  delay_model : table_lookup; time_unit : "1ns"; capacitive_load_unit(1,pf); voltage_unit : "1V"; current_unit : "1mA"; pulling_resistance_unit : "1kohm"; leakage_power_unit : "1nW";
+  cell(BUF)  { area : 1.0; pin(A){direction:input;} pin(Y){direction:output; function:"A";} }
+  cell(INV)  { area : 0.67; pin(A){direction:input;} pin(Y){direction:output; function:"A'";} }
+  cell(NAND2){ area : 1.0;  pin(A){direction:input;} pin(B){direction:input;} pin(Y){direction:output; function:"(A*B)'";} }
+  cell(NOR2) { area : 1.0;  pin(A){direction:input;} pin(B){direction:input;} pin(Y){direction:output; function:"(A+B)'";} }
+  cell(AOI21){ area : 1.33; pin(A){direction:input;} pin(B){direction:input;} pin(C){direction:input;} pin(Y){direction:output; function:"((A*B)+C)'";} }
+  cell(OAI21){ area : 1.33; pin(A){direction:input;} pin(B){direction:input;} pin(C){direction:input;} pin(Y){direction:output; function:"((A+B)*C)'";} }
+  cell(XOR2) { area : 2.33; pin(A){direction:input;} pin(B){direction:input;} pin(Y){direction:output; function:"(A^B)";} }
+  cell(XNOR2){ area : 2.33; pin(A){direction:input;} pin(B){direction:input;} pin(Y){direction:output; function:"(A^B)'";} }
+  cell(MUX2) { area : 2.33; pin(A){direction:input;} pin(B){direction:input;} pin(S){direction:input;} pin(Y){direction:output; function:"(A*S')+(B*S)";} }
+  cell(DFF)  { area : 5.0; ff(IQ,IQN){clocked_on:"C"; next_state:"D";} pin(C){direction:input; clock:true;} pin(D){direction:input;} pin(Q){direction:output; function:"IQ";} }
+  cell(DFFR) { area : 6.0; ff(IQ,IQN){clocked_on:"C"; next_state:"D"; clear:"R'";} pin(C){direction:input; clock:true;} pin(D){direction:input;} pin(R){direction:input;} pin(Q){direction:output; function:"IQ";} }
+}
