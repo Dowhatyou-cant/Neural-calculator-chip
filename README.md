@@ -1,5 +1,7 @@
 # Neural-Calculator Test Chip: v2 Inference Engine
 
+![Neural-calculator test chip: an ESP32 sends an 8×8 handwritten symbol over a byte bus; the chip's 64→48→14 ternary network returns class scores](docs/chip-overview.png)
+
 An independent, AI-assisted chip design project.
 
 ## Why I built this
