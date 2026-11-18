@@ -8,7 +8,7 @@ I started by exploring how computers work through code. The deeper I went, the c
 
 ## In plain words
 
-This is a very small neural network built directly out of logic gates, for a test chip. An ESP32 microcontroller sends the chip an 8×8 image of a handwritten digit or symbol (0–9, + − × ÷). The chip says which one it is, and the ESP32 does the arithmetic. Together they make a handwritten calculator.
+This is a very small neural network built directly out of logic gates, for a test chip. An ESP32 microcontroller sends the chip an 8×8 image of a handwritten digit or symbol (0–9, + − × ÷). The chip says which one it is, and the ESP32 does the arithmetic. Together they make a Neural calculator.
 
 - **Target:** eChipHub–SCL 0.8 µm multi-project wafer (MPW) shuttle, run by NIELIT and the Semi-Conductor Laboratory (SCL), Mohali.
 - **Status (Nov 2026):** front-end design and verification are done. Synthesis on the foundry's own cells, place and route, the chip top level and tape-out are next. **The chip has not been fabricated yet.**
